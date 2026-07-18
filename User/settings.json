@@ -122,7 +122,7 @@
     },
     "git.openRepositoryInParentFolders": "never",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "black-formatter.args": [
         "-C",
@@ -158,5 +158,10 @@
         "--style",
         "{based_on_style: pep8, split_before_dot: true, join_multiple_lines: false}"
     ],
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+
+    }
 }
